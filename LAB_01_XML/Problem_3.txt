@@ -1,0 +1,41 @@
+<clients>
+<client>
+		<id>1</id>
+		<name>John doe</name>
+		<address>
+                         <housename>H#38</housename>
+                         <roadname>R#3</roadname>
+                         <area>banani</area>
+                         <city>dhaka</city>
+                </address>
+                <department>sales</department>
+                <salary>20000</salary>
+		
+</client>
+<client>
+		<id>2</id>
+		<name>Mark Zuckerberg</name>
+		<address>
+                         <housename>H#20 F#A/1</housename>
+                         <roadname>R#20</roadname>
+                         <area>mirpur</area>
+                         <city>dhaka</city>
+                </address>
+                <department>accounts</department>
+                <salary>12000</salary>
+		
+</client>
+<client>
+		<id>3</id>
+		<name>Ala voski</name>
+		<address>
+                         <housename>h#38</housename>
+                         <roadname>r#3</roadname>
+                         <area>Motijhil</area>
+                         <city>dhaka</city>
+                </address>
+                <department>human resource</department>
+                <salary>30000</salary>
+		
+</client>
+</clients>
