@@ -2,12 +2,12 @@
 
 if(isset($_REQUEST['submit'])){
 
-    $name=  $_REQUEST['name'];
+    $email =  $_REQUEST['email'];
 
-    if($name == ""){
+    if($email == ""){
         echo "Null input";
     }else{
-        echo $name;
+        echo $email;
     }
 }
 ?>
@@ -16,14 +16,14 @@ if(isset($_REQUEST['submit'])){
 <html>
 
 <head>
-    <title>Name</title>
+    <title>Email</title>
 </head>
 
 <body>
     <form method="POST" action="#">
         <fieldset>
-            <legend>NAME</legend>
-            <input type="text" name="name" value=""> <br>
+            <legend>EMAIL</legend>
+            <input type="email" name="email" value=""> <br>
             <hr>
             <input type="submit" name="submit" value="Submit">
         </fieldset>
