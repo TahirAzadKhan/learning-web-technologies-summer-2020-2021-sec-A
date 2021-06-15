@@ -1,12 +1,12 @@
 <?php
 	if(isset($_REQUEST['submit'])){
 
-		$DOB=  $_POST['dob'];
+		$dob=  $_POST['dob'];
 
-		if($DOB == ""){
+		if($dob == ""){
 			echo "Null input";
 		}else{
-			echo $DOB;
+			echo $dob;
 		}
 
 	}else{
