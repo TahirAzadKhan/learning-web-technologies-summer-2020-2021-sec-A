@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Name Input</title>
+</head>
+<body>
+  <script>
+    function myFun()
+    {
+      var correct_way = /^[A-Za-z-z.a]+$/;
+      var a = document.getElementById("User_Name").value;
+      if(a=="")
+      {
+        document.getElementById("Message").innerHTML="***Please fill your name***";
+        return false;  
+      }
+
+      if(a.length<2)
+      {
+        document.getElementById("Message").innerHTML="***Name must be 2 characters***";
+        return false;  
+      }
+
+      if(a.match(correct_way))
+        true;
+      else
+      {
+        document.getElementById("Message").innerHTML="***Only Alphabets are allowed***";
+        return false;  
+      }
+
+      document.write("Hello,"+a);
+    }
+
+  </script>
+  <form onsubmit="return myFun()">
+    Name:<br><br>
+    <input type="text" id="User_Name" value="">
+    <span id="Message">  </span>
+    <br><br>
+    <input type="submit" value="Submit"></input>
+  </form>
+
+</body>
+</html>
