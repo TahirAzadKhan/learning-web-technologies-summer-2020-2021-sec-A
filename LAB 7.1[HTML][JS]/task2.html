@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E-mail Input</title>
+</head>
+<body>
+	<script>
+		function myFun()
+		{
+			var correct_way = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+			var a = document.getElementById("email").value;
+			if(a=="")
+			{
+				document.getElementById("Message").innerHTML="***Please fill your email***";
+				return false;  
+			}
+
+			if(a.match(correct_way))
+				true;
+			else
+			{
+				document.getElementById("Message").innerHTML="***Your e-mail is not valid***";
+				return false;  
+			}
+
+			document.write("Your e-mail is,"+a);
+		}
+
+	</script>
+	<form onsubmit="return myFun()">
+		E-mail:<br><br>
+		<input type="text" id="email" value="">
+		<span id="Message">  </span>
+		<br><br>
+		<input type="submit" value="Submit"></input>
+	</form>
+
+</body>
+</html>
