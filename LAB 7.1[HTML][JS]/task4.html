@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOB Input</title>
+</head>
+<body>
+	<script>
+		function myFun()
+		{
+			
+			var a = document.getElementById("date").value;
+			if(a=="")
+			{
+				document.getElementById("Message").innerHTML="***Please fill your DOB***";
+				return false;  
+			}
+
+			
+
+			document.write("Your DOB is,"+a);
+		}
+
+	</script>
+	<form onsubmit="return myFun()">
+
+		<fieldset>
+			<legend>Date Of Birth</legend>
+		<input type="date" id="date" value="">
+		<span id="Message">  </span>
+		<br><br>
+		<input type="submit" value="Submit"></input>
+	</fieldset>
+	</form>
+
+</body>
+</html>
