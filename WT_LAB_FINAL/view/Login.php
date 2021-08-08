@@ -19,7 +19,7 @@
 		</tr>
 		<tr height = "150px">
 			<td>
-					<form action="../Controller/logcheck.php" method="POST">
+					<form action="../controller/logcheck.php" method="POST">
 				<fieldset>
 					<legend><h2>Login</h2></legend>
 					Username : <input type = "text" name="username" value=""><br><br>
@@ -32,7 +32,6 @@
 		</tr>
 		
 	</table>
-   
 	  
 	</body>
 </html>

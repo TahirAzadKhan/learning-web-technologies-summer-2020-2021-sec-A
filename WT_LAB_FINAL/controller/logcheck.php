@@ -1,6 +1,6 @@
 <?php
 	session_start();
-require_once('../Model/empDB.php');
+require_once('../model/empDB.php');
 
 	if(isset($_POST['submit'])){
 

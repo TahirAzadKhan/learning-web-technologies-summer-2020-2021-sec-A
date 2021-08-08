@@ -38,22 +38,12 @@ function getEmp($username){
 		$sql = "select * from jobportal";
 		$result = mysqli_query($conn, $sql);
 		$emps = [];
-		//$profit = [];
-		//$value = 0;
-		//$count = 1;
 		
 		while ($row = mysqli_fetch_assoc($result)) {
 			
-			/*if($row[$count]['buying_price'] >= $row[$count]['selling_price']){
-				$value = $row[$count]['buying_price'] - $row[$count]['selling_price'];
-			} else{
-				$value = $row[$count]['selling_price'] - $row[$count]['buying_price'];
-			}*/
-			//$count++;
 			
-			//$value = $row[$count]['selling_price'] - $row[$count]['buying_price'];
 			array_push($emps, $row);
-			//array_push($profit, $value);
+			
 		}
 		
 		return $emps;
